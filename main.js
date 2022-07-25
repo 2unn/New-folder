@@ -11,7 +11,6 @@ let text2 = "";
 
 input1.onchange = (e) => {
   text1 = e.target.value;
-  num = num + 1;
 };
 
 input2.onchange = (e) => {
@@ -19,6 +18,7 @@ input2.onchange = (e) => {
 };
 
 btn1.onclick = () => {
+  num = num + 1;
   if (text1.toLocaleLowerCase().includes("nga")) {
     message1.textContent = "Ý bạn là Trư Nga";
     input1.value = "Trư Nga";
@@ -26,12 +26,16 @@ btn1.onclick = () => {
     message1.textContent = "Bạn đã nhập sai tên nhân vật";
     input1.value = "";
   }
-  console.log(num);
-  if (num == 3 || text1 == "Trư Nga") {
-    message1.textContent = "Bạn chắc chắn là Trư Nga";
+  if (num == 2 && input1.value == "Trư Nga") {
     setTimeout(() => {
-      window.location = "./sorry.html"
-    }, 1500);
+      window.location = "./sorry.html";
+    }, 500);
+  }
+  if (num == 3) {
+    message1.textContent = "Đây đúng là Trư Nga mà";
+    setTimeout(() => {
+      window.location = "./sorry.html";
+    }, 500);
   }
 };
 
@@ -43,7 +47,7 @@ btn2.onclick = () => {
   ) {
     message2.textContent = "Bạn chắc hẳn là Công chúa ngủ nhiều";
     setTimeout(() => {
-      window.location = "./sorry.html"
-    }, 1500);
+      window.location = "./sorry.html";
+    }, 1000);
   }
 };
