@@ -27,15 +27,15 @@ btn1.onclick = () => {
     input1.value = "";
   }
   if (num == 2 && input1.value == "Trư Nga") {
-    setTimeout(() => {
+    
       window.location = "./sorry.html";
-    }, 500);
+    
   }
   if (num == 3) {
     message1.textContent = "Đây đúng là Trư Nga mà";
-    setTimeout(() => {
+    
       window.location = "./sorry.html";
-    }, 500);
+   
   }
 };
 
