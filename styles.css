@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  background-image: url(./backgroud.webp);
+  background-size: cover;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  border: 3px solid #d75281;
+  background-color: #fcf8e8;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding-bottom: 100px;
+}
+
+.characters-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.characters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.characters:nth-child(1) {
+  padding-right: 30px;
+}
+
+.characters:nth-child(2) {
+  padding-left: 30px;
+}
+
+.img {
+  width: 200px;
+  height: 274px;
+  border-radius: 10px;
+}
+
+.title {
+  color: #b93160;
+  text-align: center;
+}
+
+.message1,
+.message2 {
+  width: 300px;
+  color: #f71161;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+.wrapper input {
+  outline: none;
+  height: 30px;
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid #eed180;
+  padding: 5px 10px 5px 10px;
+  color: #d75281;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.wrapper input::placeholder {
+  font-size: 16px;
+}
+
+.wrapper button {
+  margin-top: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: #d75281;
+  color: #ffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.title-2 {
+  text-align: center;
+  font-family: "IBM Plex Serif", serif;
+  color: #7a3a48;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title-2 span {
+  color: #b93160;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.wrapper .button-1 {
+  width: 300px;
+  height: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #3ccf4e;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.button-1:hover {
+  background-color: #40df52;
+}
+
+.wrapper .button-2 {
+  text-transform: uppercase;
+  background-color: #d61c4e;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.button-2:hover {
+  background-color: #f5235b;
+}
+
+.message {
+  position: relative;
+  width: 300px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+  color: #1b1a1a;
+  padding: 10px;
+  background-color: #ccf7d1;
+  opacity: 0;
+  font-size: 18px;
+  border: 1px solid #ffff;
+  border-radius: 20px;
+  transition: all 0.6s;
+}
+
+.transform1 {
+  transform: translate(100px, 100px);
+}
+
+.transform2 {
+  transform: translate(-200px, -200px);
+}
+
+.transform3 {
+  transform: translate(-600px, -160px);
+}
+
+.transform4 {
+  transform: translate(-471px, 1px);
+}
