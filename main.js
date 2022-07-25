@@ -27,8 +27,11 @@ btn1.onclick = () => {
     input1.value = "";
   }
   console.log(num);
-  if (num == 3) {
+  if (num == 3 || text1 == "Trư Nga") {
     message1.textContent = "Bạn chắc chắn là Trư Nga";
+    setTimeout(() => {
+      window.location = "./sorry.html"
+    }, 1500);
   }
 };
 
